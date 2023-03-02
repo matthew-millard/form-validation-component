@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p
+ {
+  margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Source Code Pro', monospace;
+    color: White;
+    font-size: 16px;
+}
+
+input,
+button 
+    {
+    font: inherit;
+}
+
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(115deg, rgba(62,31,71,1) 0%, rgba(33,47,69,1) 80%, rgba(27,58,75,1) 100%);
+}
+
+.component {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+header {
+    padding: 30px 40px;
+    border-bottom:1px solid #006466;
+}
+
+.form {
+   padding: 30px 40px; 
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+input {
+    display: block;
+    border:3px inset #006466;
+    border-radius: 2px;
+    width: 100%;
+    padding: 3px 10px;  
+}
+
+.fa-solid {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: black;
+}
+
+.fa-circle-check {
+    /* display: none; */
+    color:#006466;
+}
+
+.fa-circle-exclamation {
+    display: none;
+    color: black;
+}
+
+
+#sign-up-btn {
+  margin: 0 auto;
+  background: #006466 ;
+  border: 0;
+  padding: 5px 15px;
+  border-radius: 3px;
+  box-shadow:  rgba(0, 0, 0, 0.2) 0 15px 30px -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 300ms;
+}
+
+/* Active States */
+#sign-up-btn:hover {
+    background:#1B3A4B ;
+}
+
+

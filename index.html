@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/e0b43907e8.js"
       crossorigin="anonymous"
@@ -13,47 +19,57 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1>Create Account</h1>
-      </header>
-      <form action="#" method="post">
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="matt-millard" />
-          <i class="fa-solid fa-circle-check"></i>
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <small>Error message</small>
+    <div class="page-container">
+      <div class="component">
+        <div class="component__container">
+          <header>
+            <h2>Create Account</h2>
+          </header>
+          <form class="form" action="#" method="post">
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="matt-millard" />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="matt.millard@gmail.com"
+              />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="********" />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="password-check">Confirm Password</label>
+              <input
+                type="password"
+                id="password-check"
+                placeholder="********"
+              />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <small>Error message</small>
+            </div>
+            <div>
+              <button type="submit" id="sign-up-btn" role="button">
+                Sign up
+              </button>
+            </div>
+          </form>
         </div>
-
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="matt.millard@gmail.com" />
-          <i class="fa-solid fa-circle-check"></i>
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <small>Error message</small>
-        </div>
-
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="********" />
-          <i class="fa-solid fa-circle-check"></i>
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <small>Error message</small>
-        </div>
-
-        <div class="form-control">
-          <label for="password-check">Confirm Password</label>
-          <input type="password" id="password-check" placeholder="********" />
-          <i class="fa-solid fa-circle-check"></i>
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <small>Error message</small>
-        </div>
-
-        <div>
-          <button type="submit">Sign up</button>
-        </div>
-      </form>
+      </div>
     </div>
 
     <script src="./script.js" async></script>
