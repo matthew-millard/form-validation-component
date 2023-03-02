@@ -23,15 +23,15 @@
       <div class="component">
         <div class="component__container">
           <header>
-            <h2>Create Account</h2>
+            <h1>Create Account</h1>
           </header>
-          <form class="form" action="#" method="post">
+          <form class="form" id="form" action="#" method="post">
             <div class="form-control">
               <label for="username">Username</label>
               <input type="text" id="username" placeholder="matt-millard" />
               <i class="fa-solid fa-circle-check"></i>
               <i class="fa-solid fa-circle-exclamation"></i>
-              <small>Error message</small>
+              <small class="error-message"></small>
             </div>
             <div class="form-control">
               <label for="email">Email</label>
@@ -42,25 +42,25 @@
               />
               <i class="fa-solid fa-circle-check"></i>
               <i class="fa-solid fa-circle-exclamation"></i>
-              <small>Error message</small>
+              <small class="error-message"></small>
             </div>
             <div class="form-control">
               <label for="password">Password</label>
               <input type="password" id="password" placeholder="********" />
               <i class="fa-solid fa-circle-check"></i>
               <i class="fa-solid fa-circle-exclamation"></i>
-              <small>Error message</small>
+              <small class="error-message"></small>
             </div>
             <div class="form-control">
-              <label for="password-check">Confirm Password</label>
+              <label for="password-confirm">Confirm Password</label>
               <input
                 type="password"
-                id="password-check"
+                id="password-confirm"
                 placeholder="********"
               />
               <i class="fa-solid fa-circle-check"></i>
               <i class="fa-solid fa-circle-exclamation"></i>
-              <small>Error message</small>
+              <small class="error-message"></small>
             </div>
             <div>
               <button type="submit" id="sign-up-btn" role="button">
